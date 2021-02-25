@@ -9,7 +9,7 @@ AUDIO_OUTPUT_DIR = "resources"
 
 async def check_health():
     try:
-        # client = speech.SpeechClient()
+        client = speech.SpeechClient()
         logging.info("GCP Speech To Text is reachable")
         return {
             "health": 'green'
