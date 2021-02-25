@@ -43,7 +43,7 @@ def form_template_service(id: str):
 async def form_posting_service(json_body):
     db = firestore.client()
     try:
-        db.collection(FORM_TEMPLATE_COLLECTION).document(id).set(json.loads(json_body))
+        db.collection(FORM_STORAGE_COLLECTION).document(id).set(json.loads(json_body))
         return None
     except Exception as e:
         return {
