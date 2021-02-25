@@ -10,6 +10,7 @@ from controller.audio_controller import html_form_router
 
 # logging.config.fileConfig('logging.conf', disable_existing_loggers=False)
 from controller.native_form_controller import native_form_router
+from samples.firestore_sample import trialDataInsert
 
 app = FastAPI()
 
